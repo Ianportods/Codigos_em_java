@@ -1,0 +1,18 @@
+class DadosCliente {
+    private String cpf;
+    private String nome;
+    private int idade;
+
+    public DadosCliente(String cpf, String nome, int idade) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+
+    public static void main(String[] args) {
+        DadosCliente cliente = new DadosCliente("43567886321", "Lucas", 19);
+        System.out.println(cliente.getCpf());
+        System.out.println(cliente.getNome());
+        System.out.println(Integer.toString(cliente.getIdade()));
+    }
